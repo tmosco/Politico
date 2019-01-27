@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Politico | page</title>
+</head>
+
+<body>
+    <div class="body">
+
+        <header id="header" class="page-header">
+            <div class="title">
+                <div class="title-header">Politico</div>
+
+            </div>
+        </header>
+        <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">
+                toggle menu
+            </button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    <li><a href="/about.html">Political Party</a></li>
+                    <li><a href="/shop.html">Candidate</a></li>
+                    <li><a href="/shop.html">Sign-out</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <main id="main">
+            <div class="row">
+                <section class="pcolumn">
+                    <div class="user-info">
+                        <div class="image"><img src="img/profile-avatar.png" alt="" /></div>
+                        <div class="user-text-info">
+                            <div class="user-details">
+                                Name:
+                                <div class="user-name">Oyeniyi Omotayo</div>
+                            </div>
+                            <div class="user-details">
+                                voterID:
+                                <div class="user-name">123456ABC</div>
+                            </div>
+
+                            <button class="edit">Edit Bio</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="pcolumn2">
+                    <div class="political-info">
+                        <h2>Terms and Conditions</h2>
+                        <p class="terms">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                            obcaecati quisquam quasi sit tempore beatae ut minus magnam
+                            recusandae corporis eos, cupiditate placeat illum corrupti, ullam
+                            eum doloremque error! Nesciunt corrupti asperiores dolor officiis
+                            rerum omnis fugiat, dolore odit? Omnis molestiae sit unde ut
+                            perspiciatis doloribus itaque error maxime corrupti!
+                        </p>
+                        <div class="select-office">
+                            <form action="" method="post">
+                                <div id="vote-office" class="vote-office">
+
+                                    <select name="office-position" class="politico-office">
+                                        <option>Select Office</option>
+                                        <option>Governor</option>
+                                        <option>senator</option>
+                                        <option>ANPP</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button class="primary" type="submit">Contest</button>
+                                </div>
+
+
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript">
+        (function () {
+            var menuButton = document.getElementById('toggle-menu');
+            menuButton.addEventListener('click', function (event) {
+                event.preventDefault();
+                var menu = document.getElementById('main-menu');
+                menu.classList.toggle('is-open');
+            });
+        })();
+    </script>
+</body>
+
+</html>
