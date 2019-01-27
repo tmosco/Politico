@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Politico | Sign up</title>
+    <link rel="stylesheet" href="css/sign-up.css" />
+  </head>
+
+  <body>
+        <header id="header" class="page-header">
+            <div class="title">
+                <div class="title-header">Politico</div>
+        
+            </div>
+        </header>
+    <div class="container">
+      <div class="wrapper">
+        <form class="form" action="" method="post">
+        
+          <div class="form-group">
+            <div id="user-type-group">
+              <input
+                id="user-radio"
+                type="radio"
+                name="user_type"
+                value="user"
+                checked
+              />
+              <label for="user-radio">User </label>
+              <input
+                id="politician-radio"
+                type="radio"
+                name="user_type"
+                value="politician"
+              />
+              <label for="politician-radio">Politician </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- <label for="email">Email Address</label> -->
+            <input type="email" name="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="full-name">Full Name</label> -->
+            <input type="text" name="full-name" placeholder="Fullname" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="full-name">state</label> -->
+            <input type="text" name="state" placeholder="State" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="voter-id">Voter ID</label> -->
+            <input type="text" name="voter-id" placeholder="Voter ID" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="password">Password</label> -->
+            <input type="password" name="password" placeholder="password" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="confirm-password">Confirm Password</label> -->
+            <input
+              type="password"
+              name="confirm-password"
+              placeholder="confirm password"
+            />
+          </div>
+
+          <div id="political-party" class="form-group hide">
+            <label for="party"class="select">Select Political Party</label>
+            <select name="party">
+              <option>Select</option>
+              <option>APC</option>
+              <option>PDP</option>
+              <option>ANPP</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <button class="primary" type="submit">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      let regularUserCheckbox = document.querySelector(
+        "#user-type-group input#user-radio"
+      );
+      let politicianCheckbox = document.querySelector(
+        "#user-type-group input#politician-radio"
+      );
+
+      function PoliticalPartyFormElementDisplay(display) {
+        let node = document.querySelector("#political-party");
+        if (display) {
+          node.className = "form-group";
+        } else {
+          node.className = "form-group hide";
+        }
+      }
+      regularUserCheckbox.addEventListener("click", function(e) {
+        if (e.target.checked) {
+          PoliticalPartyFormElementDisplay(false);
+        }
+      });
+
+      politicianCheckbox.addEventListener("click", function(e) {
+        if (e.target.checked) {
+          PoliticalPartyFormElementDisplay(true);
+        }
+      });
+    </script>
+  </body>
+</html>
