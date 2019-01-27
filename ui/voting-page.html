@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Politico | Vote</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header id="header" class="page-header">
+            <div class="title">
+                <div class="title-header">Politico</div>
+
+            </div>
+        </header>
+
+        <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">
+                toggle menu
+            </button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    <li><a href="./user-profile.html">Profile</a></li>
+                    <li><a href="./political.html">Political Party</a></li>
+                    <li><a href="./cadidate-page.html">Candidate</a></li>
+                    <li><a href="#">Sign-out</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <section class="vote-section">
+            <div class="header">Vote for your Favorite Candidate</div>
+            <div class="vote-form">
+                <form>
+                    <div class="form-group">
+                        <select id="positions" value="President">
+                            <option value="President">President</option>
+                            <option value="Senator">Senator</option>
+                            <option value="Governor">Governor</option>
+                            <option value="LGA Chairman">LGA Chairman</option>
+                        </select>
+                    </div>
+                    <div id="President" class="candidates">
+                        <div class="form-group">
+                            <label for="PDP Atiku"><input id="PDP Atiku" type="radio" name="President" value="PDP Atiku Abubakar" />
+                                Pdp Atiku Abubakar
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="APC Buhari">
+                                <input id="APC Buhari" type="radio" name="President" value="APC Buhari" />
+                                APC Buhari
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="ANPP Shomolu"><input id="ANPP Shomolu" type="radio" name="President" value="ANPP Shomolu" />
+                                ANPP Shomolu
+                            </label>
+                        </div>
+                    </div>
+                    <div id="Senator" class="hide candidates">
+                        <div class="form-group">
+                            <label for="PDP Atiku"><input id="PDP Atiku" type="radio" name="Senator" value="PDP Atiku Abubakar" />
+                                Pdp Atiku Abubakar Senate
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="APC Buhari">
+                                <input id="APC Buhari" type="radio" name="Senator" value="APC Buhari" />
+                                APC Buhari Senate
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="ANPP Shomolu"><input id="ANPP Shomolu" type="radio" name="Senator" value="ANPP Shomolu" />
+                                ANPP Shomolu Senate
+                            </label>
+                        </div>
+                    </div>
+                    <div id="Governor" class="hide candidates">
+                        <div class="form-group">
+                            <label for="PDP Atiku"><input id="PDP Atiku" type="radio" name="Governor" value="PDP Atiku Abubakar" />
+                                Pdp Atiku Abubakar Governor
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="APC Buhari">
+                                <input id="APC Buhari" type="radio" name="Governor" value="APC Buhari" />
+                                APC Buhari Governor
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="ANPP Shomolu"><input id="ANPP Shomolu" type="radio" name="Governor" value="ANPP Shomolu" />
+                                ANPP Shomolu Governor
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="user-vote-button" type="submit">Vote</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- ///toogle javascript -->
+        <script type="text/javascript">
+            (function () {
+                var menuButton = document.getElementById('toggle-menu');
+                menuButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var menu = document.getElementById('main-menu');
+                    menu.classList.toggle('is-open');
+                });
+            })();
+
+
+            function displayOptions(nodeId, display) {
+                let node = document.querySelector(nodeId)
+                if (node) {
+                    if (display) {
+                        node.className = 'candidates'
+                    } else {
+                        node.className = 'candidates hide'
+                    }
+
+                }
+            }
+            let select = document.querySelector('#positions');
+            let roles = ['Governor', 'President', 'Senator', 'LGA Chairman']
+            select.addEventListener('change', function (e) {
+                let result = e.target.value;
+                roles.forEach(function (role) {
+                    if (role === result) {
+                        displayOptions(`#${role}`, true)
+                    } else {
+                        displayOptions(`#${role}`, false)
+                    }
+                })
+            })
+        </script>
+    </div>
+</body>
+
+</html>
