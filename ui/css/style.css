@@ -1,0 +1,38 @@
+:root {
+    box-sizing: border-box;
+  }
+
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: #f4f9f4;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+.nav-menu {
+    display: flex;
+    position: static;
+    border: 0;
+    padding: 0 1em;
+    justify-content: flex-end;
+   
+  }
+
+  .nav-menu > li + li {
+    border: 0;
+  }
+
+  .nav-menu > li > a {
+    padding:19px;
+  }
+
+ 
+
+.title-header {
+  color: #a7d7c5;
+  font-family: roboto;
+  font-size: 34px;
+}
