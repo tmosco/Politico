@@ -137,6 +137,24 @@ label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
+
+/* ///////////////////////////////////////////// */
+
+.wrapper{
+  /* background-color: red; */
+  text-align: center;
+}
+
+.wrapper > h1{
+  /* background-color: blue; */
+  margin-top: 59px;
+}
+.table-list > .political-info > table{
+    padding-left: 71px;
+}
+
 @media (min-width: 50em) {
   .title-header {
     font-size: 60px;
@@ -185,4 +203,9 @@ label {
   td {
     padding: 10px 58px;
   }
+  .table-list > .political-info > table{
+       padding: 3px 556px;
+   }
 }
+
+
