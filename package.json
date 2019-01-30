@@ -7,7 +7,7 @@
     "test": "nyc mocha ./api/tests --exit",
     "lint": "eslint api",
     "start": "nodemon api/src/server.js",
-    "coverage": ""
+    "coverage":"nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,8 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
     "coveralls": "^3.0.2",
+    "chai": "^4.2.0",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
