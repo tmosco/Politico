@@ -4,9 +4,10 @@
   "description": "A platform for user to vote their favourite candidates and gives them the ability to contest for offices also.\r It is a websites and you need to only follow the links.",
   "main": "api/index.js",
   "scripts": {
-    "test": "mocha ./api/tests  && exit 1",
+    "test": "nyc mocha ./api/tests --exit",
     "lint": "eslint api",
-    "start": "nodemon api/src/server.js"
+    "start": "nodemon api/src/server.js",
+    "coverage": ""
   },
   "repository": {
     "type": "git",
@@ -20,17 +21,18 @@
   "homepage": "https://github.com/tmosco/politico#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "coveralls": "^3.0.2",
     "express": "^4.16.4",
     "underscore": "^1.9.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "coveralls": "^3.0.2",
     "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.9",
+    "nyc": "^13.1.0",
     "sinon": "^7.2.3",
     "supertest": "^3.4.2"
   }
