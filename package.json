@@ -4,7 +4,7 @@
   "description": "A platform for user to vote their favourite candidates and gives them the ability to contest for offices also.\r It is a websites and you need to only follow the links.",
   "main": "api/index.js",
   "scripts": {
-    "test": "mocha ./api/tests  && exit 1",
+    "test": "mocha ./api/tests --exit",
     "lint": "eslint api",
     "start": "nodemon api/src/server.js"
   },
