@@ -1,149 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Politico | Vote</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <div class="wrapper">
+  <body>
+    <header>
+      <a href="index.html" class="brand">Politico</a>
+      <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+        <div class="menu-dropdown">
+          <ul class="nav-menu">
+            <li><a href="./user-dashboard.html">Dashboard</a></li>
+            <li><a href="./voting-page.html" class="active">Vote</a></li>
+            <li><a href="./cadidate-page.html">Candidate</a></li>
+            <li><a href="./create-platform.html">Contest</a></li>
+            <li><a href="./political-party.html">Political party</a></li>
+            <li><a href="./index.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="vote-1">
+      <div class="vote-header">Vote for your Favorite Candidate</div>
+      <div class="vote-form">
+        <div class="vote-office">
+          <div class="office-name">Governor</div>
+          <div class="vote-field">
+            <form action="">
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <input type="submit" class="vote-btn" value="Vote" />
+            </form>
+          </div>
+        </div>
+        <div class="vote-office">
+          <div class="office-name">President</div>
+          <div class="vote-field">
+            <form action="">
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <input type="submit" class="vote-btn" value="Vote" />
+            </form>
+          </div>
+        </div>
+        <div class="vote-office">
+          <div class="office-name">senator</div>
+          <div class="vote-field">
+            <form action="">
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <input type="submit" class="vote-btn" value="Vote" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <header id="header" class="page-header">
-            <div class="title">
-                <div class="title-header">Politico</div>
-
-            </div>
-        </header>
-
-        <nav class="menu" id="main-menu">
-            <button class="menu-toggle" id="toggle-menu">
-                toggle menu
-            </button>
-            <div class="menu-dropdown">
-                <ul class="nav-menu">
-                    <li><a href="./user-profile.html">Profile</a></li>
-                    <li><a href="./political-party.html">Political Party</a></li>
-                    <li><a href="./cadidate-page.html">Candidate</a></li>
-                    <li><a href="./index.html">Sign-out</a></li>
-
-                </ul>
-            </div>
-        </nav>
-        <section class="vote-section">
-            <div class="header">Vote for your Favorite Candidate</div>
-            <div class="vote-form">
-                <form>
-                    <div class="form-group">
-                        <select id="positions" value="President">
-                            <option value="President">President</option>
-                            <option value="Senator">Senator</option>
-                            <option value="Governor">Governor</option>
-                            <option value="LGA Chairman">LGA Chairman</option>
-                        </select>
-                    </div>
-                    <div id="President" class="candidates">
-                        <div class="form-group">
-                            <label for="PDP Atiku"><input id="PDP Atiku" type="radio" name="President" value="PDP Atiku Abubakar" />
-                                Pdp Atiku Abubakar
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="APC Buhari">
-                                <input id="APC Buhari" type="radio" name="President" value="APC Buhari" />
-                                APC Buhari
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="ANPP Shomolu"><input id="ANPP Shomolu" type="radio" name="President" value="ANPP Shomolu" />
-                                ANPP Shomolu
-                            </label>
-                        </div>
-                    </div>
-                    <div id="Senator" class="hide candidates">
-                        <div class="form-group">
-                            <label for="PDP Atiku"><input id="PDP Atiku" type="radio" name="Senator" value="PDP Atiku Abubakar" />
-                                Pdp Atiku Abubakar Senate
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="APC Buhari">
-                                <input id="APC Buhari" type="radio" name="Senator" value="APC Buhari" />
-                                APC Buhari Senate
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="ANPP Shomolu"><input id="ANPP Shomolu" type="radio" name="Senator" value="ANPP Shomolu" />
-                                ANPP Shomolu Senate
-                            </label>
-                        </div>
-                    </div>
-                    <div id="Governor" class="hide candidates">
-                        <div class="form-group">
-                            <label for="PDP Atiku"><input id="PDP Atiku" type="radio" name="Governor" value="PDP Atiku Abubakar" />
-                                Pdp Atiku Abubakar Governor
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="APC Buhari">
-                                <input id="APC Buhari" type="radio" name="Governor" value="APC Buhari" />
-                                APC Buhari Governor
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="ANPP Shomolu"><input id="ANPP Shomolu" type="radio" name="Governor" value="ANPP Shomolu" />
-                                ANPP Shomolu Governor
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button class="user-vote-button" type="submit">Vote</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-
-        <!-- ///toogle javascript -->
-        <script type="text/javascript">
-            (function () {
-                var menuButton = document.getElementById('toggle-menu');
-                menuButton.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    var menu = document.getElementById('main-menu');
-                    menu.classList.toggle('is-open');
-                });
-            })();
-
-
-            function displayOptions(nodeId, display) {
-                let node = document.querySelector(nodeId)
-                if (node) {
-                    if (display) {
-                        node.className = 'candidates'
-                    } else {
-                        node.className = 'candidates hide'
-                    }
-
-                }
-            }
-            let select = document.querySelector('#positions');
-            let roles = ['Governor', 'President', 'Senator', 'LGA Chairman']
-            select.addEventListener('change', function (e) {
-                let result = e.target.value;
-                roles.forEach(function (role) {
-                    if (role === result) {
-                        displayOptions(`#${role}`, true)
-                    } else {
-                        displayOptions(`#${role}`, false)
-                    }
-                })
-            })
-        </script>
-    </div>
-</body>
-
+    <!-- ///toogle javascript -->
+    <script type="text/javascript">
+      (function() {
+        var menuButton = document.getElementById("toggle-menu");
+        menuButton.addEventListener("click", function(event) {
+          event.preventDefault();
+          var menu = document.getElementById("main-menu");
+          menu.classList.toggle("is-open");
+        });
+      })();
+    </script>
+  </body>
 </html>
