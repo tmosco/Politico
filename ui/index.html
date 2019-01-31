@@ -1,53 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Politico</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Politico</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
 <body>
-    <div class="container">
-            <header id="header" class="page-header">
-                <div class="title">
-                    <div class="title-header">Politico</div>
-            
-                </div>
-            </header>
-        <nav class="menu" id="main-menu">
-           
-            <div class="menu-dropdown">
-                <ul class="nav-menu">
-                    <li><a href="./user-profile.html">User Page</a></li>
-                    <li><a href="./dashboard.html">UAdmin page</a></li>
-                    <li><a href="./sign-in.html">Login</a></li>
-                    <li><a href="./sign-up.html">Sign-up</a></li>
-        
-                    
-        
-                </ul>
-            </div>
-        </nav>
-      
-        <main class="main tile">
-            <h1>Team collaboration done right</h1>
-            <p>Thousands of teams from all over the
-                world turn to <b>Ink</b> to communicate
-                and get things done.</p>
-        </main>
-       
-        <div class="sidebar-bottom tile centered">
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat architecto 
-                totam laborum quibusdam explicabo placeat, necessitatibus provident neque veritatis, labore molestias,
-                 maxime voluptatem in odio magni. Similique ipsam magni iusto! Sed 
-                 corporis, sunt hic reprehenderit 
-                 magni minima repellat et. Accusamus maiores voluptates
-                  repellat corrupti animi voluptate corporis 
-                 aliquid quasi.
-            </p>
-        </div>
-    </div>
+	<div id="wrapper">
+		<div class="container">
+			
+		<header>
+			<div class="header-area">
+          		<div id="logo">
+            		<a href="#" title="politico" rel="home">
+    					<p class="logo">Politico</p>
+    				</a>
+          		</div>
+				<div class="flex-col hide-for-medium flex-right">
+            		<ul class="side-nav">
+              			<li><a href="./admin-dashboard.html" class="button link">Admin</a></li>
+              			<li><a href="./user-dashboard.html" class="button link">Home</a></li>
+              			<li><a href="./sign-up.html" class="button link">Sign Up</a></li>
+						<li><a href="./sign-in.html" class="button link">Login</a></li>
+					</ul>
+          		</div>
+			</div>
+          
+		</header>
+		<div class="intro-text">
+			<h2 class="uppercase hero-font">
+				<span style="color: #151515;"> There have always been a better way of doing things.Now that you are here,I welcome to I welcome
+					you to a better way to vote.
+				</span></h2>
+			<a href="./user-dashboard.html" target="_self" class="button">Get Started</a>
+		</div>
+
+	</div>
+</div>
 </body>
 </html>

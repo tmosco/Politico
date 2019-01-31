@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /* 
@@ -91,6 +92,98 @@ video {
   background: transparent;
 }
 
+=======
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+input[type="button"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+html body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
 body {
   line-height: 1;
   color: #5e5e5e;
@@ -430,6 +523,7 @@ div.form-group {
 }
 
 .wrapper > h1 {
+<<<<<<< HEAD
 
   font-size: 23px;
     margin: 8px 3px;
@@ -445,11 +539,28 @@ td {
 color: #5e5e5e;
     font-weight: 600;
     font-size: 17px;
+=======
+  font-size: 23px;
+  margin: 8px 3px;
+}
+
+.table {
+  margin: 6px 43px;
+
+  text-align: center;
+}
+td {
+  padding: 7px;
+  color: #5e5e5e;
+  font-weight: 600;
+  font-size: 17px;
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
 }
 th {
   border: collapse;
   font-weight: 800;
   background-color: #5c8d89;
+<<<<<<< HEAD
  color: #f3f9f3;
         font-size: 21px;
     padding: 4px 19px;
@@ -457,6 +568,15 @@ th {
 
 a.party-name{
     color: #5e5e5e;
+=======
+  color: #f3f9f3;
+  font-size: 21px;
+  padding: 4px 19px;
+}
+
+a.party-name {
+  color: #5e5e5e;
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
 }
 
 /* ////////////view candidates //////////////// */
@@ -464,6 +584,7 @@ h3 {
   text-align: center;
   color: #5c8d89;
   font-size: 23px;
+<<<<<<< HEAD
 margin: 8px 3px;
 }
 .vote-header{
@@ -542,10 +663,81 @@ margin: 6px 8px;
 }
 .vote-1{
 
+=======
+  margin: 8px 3px;
+}
+.vote-header {
+  font-size: 25px;
+  text-align: center;
+}
+
+select {
+  background-color: #74b49b;
+  color: #f3f9f3;
+  font-size: 15px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 3px 8px;
+  margin: 3px 45px;
+  display: flex;
+  flex-direction: rows;
+}
+label {
+  font-size: 17px;
+}
+
+.container > .table {
+  margin: 6px 8px;
+}
+
+.candidate {
+  display: flex;
+  padding: 2px 19px;
+  margin: 1px px;
+  margin: 4px 25px;
+}
+.candidate-party {
+  padding: 1px 11px;
+}
+.candidate > label {
+  font-size: 17px;
+  padding: 1px 7px;
+  margin-right: 40px;
+}
+
+.office-name {
+  background-color: #5c8d89;
+  color: #f3f9f3;
+  font-size: 28px;
+  text-align: center;
+  padding: 1px 28px;
+  width: 50%;
+  margin-left: 68px;
+  border-radius: 7px;
+}
+.vote-office {
+  border: 1px solid #5c8d89;
+  border-radius: 21px;
+  text-align: center;
+  margin: 20px 1px;
+}
+
+.vote-btn {
+  background-color: #74b49b;
+  color: #f3f9f3;
+  font-size: 17px;
+  font-weight: 700;
+  border-color: #f3f9f3;
+  border-radius: 5px;
+  padding: 3px 9px;
+}
+.vote-1 {
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
   background-color: #f3f9f3;
   padding: 12px 15px;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -606,6 +798,12 @@ margin: 6px 8px;
 
 
 
+=======
+.active {
+  text-decoration: double;
+  text-decoration-line: underline;
+}
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
 
 @media (min-width: 50em) {
   .menu-toggle {
@@ -676,6 +874,10 @@ margin: 6px 8px;
   }
   .terms {
     padding: 17px 1px;
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
   }
   .btn {
     font-size: 25px;
@@ -692,6 +894,20 @@ margin: 6px 8px;
 
   .form-group > input {
     font-size: 28px;
+<<<<<<< HEAD
+=======
+  }
+  .modal-body {
+    position: fixed;
+    top: 3em;
+    bottom: -2em;
+    right: 23%;
+    left: 19%;
+    padding: 2em 0em;
+    background-color: #f3f9f3;
+    overflow: auto;
+    z-index: 2;
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
   }
   .modal-body {
     position: fixed;
@@ -775,6 +991,7 @@ h3{
 }
 .candidate > label{
 
+<<<<<<< HEAD
                   font-size: 30px;
     padding: 1px 7px;
     margin-right: 40px;
@@ -818,3 +1035,93 @@ margin: 12px 595px;
   }
 
 }
+=======
+  /* /////////////////////////politico party///////////// */
+  .wrapper {
+    margin-top: 48px;
+  }
+
+  .wrapper > h1 {
+    font-size: 45px;
+    padding: 10px;
+  }
+  .party-info {
+    margin-left: 328px;
+    padding: 8px 297px;
+  }
+  td {
+    padding: 10px;
+    font-size: 27px;
+  }
+  th {
+    font-size: 32px;
+    padding: 9px 48px;
+  }
+
+  select {
+    font-size: 28px;
+    margin: 0px 13px;
+    color: #5e5e5e;
+  }
+  label {
+    font-size: 27px;
+  }
+  .select-1 {
+    display: flex;
+  }
+  .select-group {
+    display: flex;
+  }
+  h3 {
+    font-size: 47px;
+  }
+  .container > .table {
+    margin: 6px 583px;
+  }
+
+  /* /////////////////voting    */
+
+  .candidate {
+    display: flex;
+    padding: 2px 19px;
+    margin: 1px px;
+    margin: 4px 25px;
+  }
+  .candidate-party {
+    padding: 1px 11px;
+  }
+  .candidate > label {
+    font-size: 30px;
+    padding: 1px 7px;
+    margin-right: 40px;
+  }
+
+  .office-name {
+    font-size: 46px;
+
+    margin-left: 100px;
+  }
+  .vote-office {
+    font-size: 30px;
+  }
+
+  .vote-btn {
+    padding: 9px 28px;
+  }
+  .vote-1 {
+    background-color: #f3f9f3;
+    padding: 54px 15px;
+  }
+  .vote-form {
+    margin: 12px 595px;
+  }
+
+  input[type="radio"] {
+    background-color: red;
+  }
+
+  .vote-header {
+    font-size: 35px;
+  }
+}
+>>>>>>> 504f6615cf231323b17613f82ff639f27dfaf09e
