@@ -4,11 +4,7 @@
   "description": "A platform for user to vote their favourite candidates and gives them the ability to contest for offices also.\r It is a websites and you need to only follow the links.",
   "main": "api/index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "mocha ./api/tests --exit",
-=======
     "test": "nyc mocha ./api/tests --exit",
->>>>>>> develop
     "lint": "eslint api",
     "start": "nodemon api/src/server.js",
     "coverage":"nyc report --reporter=text-lcov | coveralls"
