@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 });
 
 const version = 'v1';
-
+const PORT = process.env.PORT || 3000
 const parties = [];
 const requiredFields = ['name'];
 
@@ -43,9 +43,15 @@ app.post(`/api/${version}/parties`, (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('Listening on port 3000');
+=======
+app.listen(PORT, () => {
+    
+    console.log(`Listening on port ${PORT}`);
+>>>>>>> develop
 });
 
 module.exports = app;
