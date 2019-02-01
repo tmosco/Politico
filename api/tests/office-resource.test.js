@@ -52,7 +52,25 @@ describe('Office resource', () => {
         });
     });
   });
-
+  describe('GET /offices', () => {
+    it('returns all the political offices created', () => {
+      request(app).get(url).end((err, res) => {
+        expect(res.statusCode).to.equal(200);
+        expect(res.body).to.deep.equal({
+          status: 200,
+          data: [{
+            id: 1,
+            name: 'President',
+            type: 'federal',
+          }, {
+            id: 2,
+            name: 'Lagos Governorship Office',
+            type: 'state',
+          }],
+        });
+      });
+    });
+  });
   describe('GET /offices/1', () => {
     it('returns the office by the id provided in the url', (done) => {
       request(app).get(`${url}/1`).end((err, res) => {
