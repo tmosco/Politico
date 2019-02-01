@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 const version = 'v1';
 
 
-const offices = [];
+let offices = [];
 const officesRequiredFields = ['name', 'type'];
 const baseUrl = `/api/${version}`;
 app.post(`${baseUrl}/offices`, (req, res) => {

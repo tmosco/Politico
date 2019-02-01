@@ -106,7 +106,7 @@ describe('Office resource', () => {
           data: {
             id: 1,
             name: 'Chairman',
-            type: 'LGA',
+            type: 'federal',
           },
         });
       });
