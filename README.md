@@ -1,7 +1,37 @@
 # politico
-[![Build Status](https://travis-ci.org/tmosco/politico.svg?branch=develop)](https://travis-ci.org/tmosco/politico)
-[![Coverage Status](https://coveralls.io/repos/github/tmosco/politico/badge.svg?branch=develop)](https://coveralls.io/github/tmosco/politico?branch=develop)
-A platform for user to vote their favourite candidates and gives them the ability to contest for offices also.
-It is a websites and you need to only follow the links.
 
-The user have to sign in to get access to the page.
+*An Application that allows users to vote and run for office.*
+
+### Installation
+
+#### `Step 1` - clone the repo
+  
+```bash
+$ https://github.com/tmosco/politico.git
+```
+
+#### `Step 2` - cd in the repo
+
+```bash
+$ cd politico
+```
+
+#### `Step 3` - install dependencies
+
+```bash
+$ npm install
+```
+
+#### `Step 4` - run application
+
+```bash
+$ npm run start
+```
+
+In browser, open [http://localhost:3000](http://localhost:3000)
+
+# Built With
+- Node.js
+
+# Author
+Omotayo Oyeniyi
