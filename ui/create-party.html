@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin|create page</title>
+    <link rel="stylesheet" href="css/adminstyle.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            Admin for Politico
+        </div>
+        <nav>
+
+        </nav>
+    </header>
+    <div class="createpage">
+        <main class="row">
+
+            <section class="column1">
+                <div id="menu">
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="./dashboard.html" class="profile ">Dashboard</a></li>
+                        <li><a href="./create-office.html" class="profile ">Create Office</a></li>
+
+                            <li><a href="./index.html" class="profile ">Log-out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="column2">
+                <div class="dashboard-info">
+                    <div class="political-roles">
+                        <h1 class="create">Party List <button class="new" id="open">Add</button></h1>
+                        <!-- <h1 class="create">Party List <a class="new" href="post-form.html">Add party</a></h1> -->
+
+                        <div class="political-info">
+                            <table class="table">
+                                <thead class="thead">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Party</th>
+                                        <th>Leader</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="tbody">
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a class="party-name" href="#">APC</a></td>
+                                        <td>Bello Gambari</td>
+                                        <td>Active</td>
+                                        <td class="button">
+                                            <a class="view" href="#">View</a>
+                                            <a class="edit" href="post-form.html">Edit</a>
+                                            <a class="delete" href="#" onclick="return confirm('Are you sure?');">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a class="party-name" href="#">PDP</a></td>
+
+                                        <td>Tosin Fakeye</td>
+                                        <td>Draft</td>
+                                        <td class="button">
+                                            <a class="view" href="#">View</a>
+                                            <a class="edit" href="post-form.html">Edit</a>
+                                            <a class="delete" href="#" onclick="return confirm('Are you sure?');">Delete</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <section>
+                <div class="modal" id="modal">
+                    <div class="modal-backdrop"></div>
+                    <div class="modal-body">
+                        <button class="modal-close" id="close">
+                            <span class="sr-only">close</span>
+                        </button>
+                        <p class="h3">Create Political Party<p>
+                                <form class="form" action="" method="post">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label for="office">Party Logo </label>
+                                            <input type="text" name="party-logo" placeholder="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="party-leader">Party Name</label>
+                                            <input type="text" name="party-name" placeholder="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="party-leader">Party Leader</label>
+                                            <input type="text" name="party-leader" placeholder="" />
+                                        </div>
+                                        <div class="form-description">
+                                            <label for="content">Description</label>
+                                            <textarea id="content" class="party-description" rows="10"></textarea>
+                                        </div>
+            
+                                        <div class="form-description">
+                                            <label for="status">Status</label>
+                                            <select id="status" class="status-bar">
+                                                <option value="1">Active</option>
+                                                <option value="2">Draft</option>
+                                                
+                                            </select>
+                                        </div>
+            
+                                        <input type="hidden" name="id" value="1" />
+                                        <button type="submit" class="save">
+                                            Save
+                                        </button>
+                                    </fieldset>
+                                </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script type="text/javascript">
+    var button = document.getElementById('open');
+    var close = document.getElementById('close');
+    var modal = document.getElementById('modal');
+
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        modal.style.display = 'block';
+    });
+
+    close.addEventListener('click', function (event) {
+        event.preventDefault();
+        modal.style.display = 'none';
+    });
+</script>
+
+</body>
+
+</html>
