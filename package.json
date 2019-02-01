@@ -21,11 +21,11 @@
   "homepage": "https://github.com/tmosco/politico#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
-    "underscore": "^1.9.1",
     "chai": "^4.2.0",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
@@ -38,13 +38,5 @@
   },
   "engines": {
     "node": "10.8.0"
-  },
-
-"nyc": {
-  "include": [
-    "api/src/**/*.js"
-  ],
-  "check-coverage": true,
-  "per-file": true
-}
+  }
 }
