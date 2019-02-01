@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        admin | Create Office
+
+    </title>
+    <link rel="stylesheet" href="css/adminstyle.css" />
+</head>
+<body>
+    <header>
+        <div class="header">Admin for Politico</div>
+        <nav></nav>
+    </header>
+    <main class="row">
+        <section class="column1">
+            <div id="menu">
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="./adminpage.html" class="profile ">Dashboard</a></li>
+                        <li>
+                            <a href="./create-party.html" class=" profile">Create Party</a>
+                        </li>
+                        <li><a href="./index.html" class="profile ">Log-out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="allsection">
+                <section class="column2">
+                    <div class="dashboard-info">
+                        <div class="political-roles">
+                            <h3 class="h3">Office to run</h3>
+                            <h1 class="create">create office <button class="new" id="open">add</button></h1>
+                            <div class="political-info">
+                                <table class="table">
+                                    <thead class="thead">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Office</th>
+                                            <th>State</th>
+                                            <th>LGA</th>
+                                            <th>Federal constituencies</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                            
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td>1</td>
+                                            <td><a class="party-name" href="#">Governor</a></td>
+                                            <td>Lagos State</td>
+                                            <td>Alimosho</td>
+                                            <td>Lagos-west District</td>
+                                            <td class="button">
+                                               
+                                                <a class="edit" href="post-form.html">Edit</a>
+                                                <a class="delete" href="#" onclick="return confirm('Are you sure?');">Delete</a>
+                                            </td>
+                                        </tr>
+                                        <td>1</td>
+                                        <td><a class="party-name" href="#">President</a></td>
+                                        <td>Lagos State</td>
+                                        <td>Alimosho</td>
+                                        <td>Lagos-west District</td>
+                                        <td class="button">
+                                        
+                                            <a class="edit" href="post-form.html">Edit</a>
+                                            <a class="delete" href="#" onclick="return confirm('Are you sure?');">Delete</a>
+                                        </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                        </div>
+        
+                        
+                    </div>
+                   
+                </section>
+                </div>
+
+        <section>
+            <div class="modal" id="modal">
+                <div class="modal-backdrop"></div>
+                <div class="modal-body">
+                    <button class="modal-close" id="close">
+                        <span class="sr-only">close</span>
+                    </button>
+                    <p class="h3">Create Political Office<p>
+                            <form class="form" action="" method="post">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="office">Office</label>
+                                        <input type="text" name="party-name" placeholder="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="party-leader">State</label>
+                                        <input type="text" name="party-leader" placeholder="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Party-full-name">Federal constituencies</label>
+                                        <input type="text" name="Party-full-name" placeholder="" />
+                                    </div>
+        
+                                    <div class="form-description">
+                                        <label for="status">Status</label>
+                                        <select id="status" class="status-bar">
+                                            <option value="1">Passive</option>
+                                            <option value="2">Awaiting</option>
+                                            <option value="3">Confirmed</option>
+                                        </select>
+                                    </div>
+        
+                                    <input type="hidden" name="id" value="1" />
+                                    <button type="submit" class="save">
+                                        Save
+                                    </button>
+                                </fieldset>
+                            </form>
+                </div>
+            </div>
+        </section>
+        
+        
+        <script type="text/javascript">
+            var button = document.getElementById('open');
+            var close = document.getElementById('close');
+            var modal = document.getElementById('modal');
+
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                modal.style.display = 'block';
+            });
+
+            close.addEventListener('click', function (event) {
+                event.preventDefault();
+                modal.style.display = 'none';
+            });
+        </script>
+</body>
+</html>

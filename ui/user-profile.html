@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politico | Userpage</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+
+    <header id="header" class="page-header">
+        <div class="title">
+            <div class="title-header">Politico</div>
+
+        </div>
+    </header>
+
+    <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">
+            toggle menu
+        </button>
+        <div class="menu-dropdown">
+            <ul class="nav-menu">
+                <li><a href="./voting-page.html">Vote</a></li>
+                <li><a href="./political-party.html">Political Party</a></li>
+                <li><a href="./cadidate-page.html">Candidate</a></li>
+                <li><a href="./index.html">Sign-out</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+
+
+
+        <main id="main">
+            <div class="row">
+                <section class="column1">
+                    <div class="user-info">
+                        <div class="image"><img src="img/profile-avatar.png" alt="" /></div>
+                        <div class="user-text-info">
+                            <div class="user-bio">
+
+                                <div class="user-details">
+                                    Name:
+                                    <div class="user-name">Oyeniyi Omotayo</div>
+                                </div>
+                                <div class="user-details">
+                                    voterID:
+                                    <div class="user-name">123456ABC</div>
+                                </div>
+
+                            </div>
+                            <a href="http://" class="edit">Edit Bio</a>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="column2">
+                    <div class="election-info">
+
+                        <a href="./voting-page.html"><button class="user-vote-button">Vote Now</button></a>
+                       
+                        <div class="timer">5:00 :00 <span>left</span></div>
+                    </div>
+
+                </section>
+                <section class="column3">
+                    <div class="myvotes">
+                        <div class="user-header">My votes</div>
+                        <div class="my-votes" id="">
+                            <div class="myvotes-party" id="">PDP</div>
+                            <div class="myvotes-office" id="myvotes-office">President : </div>
+                            <div class="myvotes-name" id="">Mohammed Buhari</div>
+                        </div>
+                        <div class="my-votes" id="">
+                            <div class="myvotes-party" id="">PDP</div>
+                            <div class="myvotes-office" id="myvotes-office">Governor : </div>
+                            <div class="myvotes-name" id="">Jimmy Agbaje</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="column4">
+                    <div class="winner">
+                        <div class="user-header">Winner</div>
+                        <div class="my-votes" id="">
+                            <div class="myvotes-party" id="">pdp</div>
+                            <div class="myvotes-office" id="myvotes-office">President</div>
+                            <div class="myvotes-name" id="">Mohammed Buhari</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            var menuButton = document.getElementById('toggle-menu');
+            menuButton.addEventListener('click', function (event) {
+                event.preventDefault();
+                var menu = document.getElementById('main-menu');
+                menu.classList.toggle('is-open');
+            });
+        })();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Circular Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  /* line-height: 1.42857; */
+  color: #5e5e5e;
+  background-color: #f4f9f4;
+  font-weight: bold;
+}
+
+/* .container {
+  width: 1024px;
+  margin: 0 auto;
+} */
+.container {
+  padding: 1px 1px;
+}
+
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 6px 20px;
+
+  /* background-color: #fff; */
+}
+
+.form h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.form-group > input:not([type="checkbox"]):not([type="radio"]) {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#user-type-group {
+  display: flex;
+  margin: 0 auto;
+}
+.form-group > input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  background: #e0e0e0;
+  color: black;
+}
+input[type="radio"]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+button.primary {
+  padding: 13px;
+  background-color: #5c8d89;
+  color: #f3f3f3;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+.hide {
+  display: none;
+}
+
+/*---Media Queries --*/
+
+/* 
+.page-header {
+  padding: 0.4em 1em;
+  background-color: #fff;
+      
+} */
+
+  .title-header{
+       color: #a7d7c5;
+       font-family:roboto;
+       font-size: 34px;
+       text-align: center;
+       
+            
+      }
+      label.select{
+        font-size: 14px;
+        padding: 2px 8px;
+      }
+
+
+
+      /* media queries */
+      @media (min-width: 50em) {
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  margin: 0 auto;
+}
+.form-group > input:not([type="checkbox"]):not([type="radio"]) {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 25px;
+}
+.form-group{
+  padding :1em 7em;
+}
+label {
+   
+    font-size: 34px;
+
+
+      }
+      label.select{
+       font-size: 21px;
+    padding: 14px 8px;
+    font-weight: 200;
+}
+      
+      select{
+       
+            font-size: 26px;
+    
+    font-weight: 100;
+
+      }
+button.primary{
+      font-size: 26px;
+  
+}
+  .title-header{
+       color: #a7d7c5;
+       font-family:roboto;
+       font-size: 80px;
+       background-color: #F3F9F3;
+
+       
+            
+      }
+}
+    
+
+
+
