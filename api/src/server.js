@@ -3,15 +3,13 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.json()); 
 app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
 const version = 'v1';
-
 let parties = [];
-const offices = [];
 const partyRequiredFields = ['name'];
 const baseUrl = `/api/${version}`;
 app.post(`${baseUrl}/parties`, (req, res) => {
@@ -45,11 +43,10 @@ app.post(`${baseUrl}/parties`, (req, res) => {
     });
   }
 });
-app.get(`${baseUrl}/parties`, (req, res) => {
+app.get(`${baseUrl}/parties`,(req, res) => {
   res.status(200).json({ status: 200, data: parties });
 });
 app.listen(3000, () => {
-  // eslint-disable-next-line no-console
   console.log('Listening on port 3000');
 });
 
